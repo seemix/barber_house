@@ -3,7 +3,7 @@ import { FaInstagram } from 'react-icons/fa';
 
 import { useOutsideClick } from '../../hooks/outsideClick.js';
 import { LangSwitcher, Menu, MenuButton } from '../index.js';
-import logo from './Logo_hor.webp';
+import logo from './Logo_hor.png';
 import css from './Header.module.css';
 
 const Header = () => {
@@ -19,7 +19,7 @@ const Header = () => {
         <div className={css.header_wrapper}>
             <div><img src={logo} alt={'logo'} height={78}/></div>
             <div className={css.lang_switcher_wrapper}>
-                <a href={''} target={'_blank'}><FaInstagram size={'2em'}/></a>
+                <a href={'https://barberhouse.vercel.app/'} target={'_blank'} rel="noreferrer"><FaInstagram size={'2em'}/></a>
                 <div><LangSwitcher/></div>
             </div>
             <div ref={menuRef}>
