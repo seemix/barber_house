@@ -1,6 +1,5 @@
 .menu_wrapper {
     display: block;
-    /*align-items: center;*/
     height: 100%;
     margin: 0;
     padding: 10px 0;
@@ -39,7 +38,7 @@
     font-weight: 600;
     text-transform: uppercase;
     color: whitesmoke;
-    letter-spacing: 1px;
+    letter-spacing: 3px;
     display: block;
     text-align: center;
     text-decoration: none;
@@ -55,7 +54,7 @@
     float: left;
     left: -17px;
     opacity: 0;
-    padding: 0;
+    padding: 15px 0;
     position: absolute;
     top: -5px;
     background-color: rgba(var(--main_dark), 0);
@@ -80,6 +79,11 @@
     transform: rotate(45deg);
     transition: 0.2s all ease-in-out;
 }
+
+.scroll_background {
+    background-color: var(--main_dark);
+}
+
 
 @media screen and (max-width: 800px) {
     .menu_wrapper ul li ul {

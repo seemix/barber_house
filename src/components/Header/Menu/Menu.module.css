@@ -33,7 +33,6 @@
 
 @media screen and (max-width: 800px) {
     .menu_wrapper {
-        /*position: absolute;*/
         max-width: 100vw;
         top: 0;
     }
@@ -51,7 +50,7 @@
         max-height: 0;
         transition: all 0.5s;
         padding: 0;
-        z-index: 5;
+        z-index: 1;
 
     }
 

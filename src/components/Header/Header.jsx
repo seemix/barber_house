@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { FaInstagram } from 'react-icons/fa';
 
 import { useOutsideClick } from '../../hooks/outsideClick.js';
@@ -6,23 +6,39 @@ import { LangSwitcher, Menu, MenuButton } from '../index.js';
 import css from './Header.module.css';
 
 const Header = () => {
+
     const [openMenu, setOpenMenu] = useState(false);
+    const [scroll, setScroll] = useState(false);
     const clickMenu = () => {
         setOpenMenu(prevState => !prevState);
     }
     const closeMenu = () => {
         setOpenMenu(false);
     }
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 80) setScroll(true);
+            else setScroll(false);
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     const menuRef = useOutsideClick(closeMenu);
+
     return (
-        <div className={css.header_wrapper}>
+        <div className={!scroll ? css.header_wrapper : css.header_wrapper + ' ' + css.scroll}>
             <div className={css.logo}></div>
             <div className={css.lang_switcher_wrapper}>
                 <div>
-                    <a href={'https://barberhouse.vercel.app'} target={'_blank'} rel={'noreferrer'}><FaInstagram
-                    size={'2em'}/></a>
+                    <a href={'https://barberhouse.vercel.app'} target={'_blank'} rel={'noreferrer'}>
+                        <FaInstagram size={'2em'}/>
+                    </a>
                 </div>
-                <div><LangSwitcher/></div>
+                <div><LangSwitcher scroll={scroll}/></div>
             </div>
             <div ref={menuRef}>
                 <Menu openMenu={openMenu} setOpenMenu={setOpenMenu}/>

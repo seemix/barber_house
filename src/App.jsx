@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { Header, Modal, Slider } from './components/index.js';
+import { Header, Modal, ModalProvider, Slider } from './components/index.js';
 import './App.css'
 
 function App() {
@@ -10,6 +10,7 @@ function App() {
             <Modal showModal={showModal} setShowModal={setShowModal}/>
             <Header/>
             <Slider showModal={showModal}/>
+            <ModalProvider showModal={showModal}/>
         </div>
     )
 }

@@ -8,16 +8,16 @@ export const menuItems = [
     {
         id: 1,
         name: 'about us',
-        to: '#about'
+        to: 'about'
     },
     {
         id: 2,
         name: 'services',
-        to: '#services'
+        to: 'services'
     },
     {
         id: 3,
         name: 'contacts',
-        to: '#contacts'
+        to: 'contacts'
     }
 ]
