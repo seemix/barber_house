@@ -10,7 +10,9 @@ function App() {
             <Modal showModal={showModal} setShowModal={setShowModal}/>
             <Header/>
             <Slider showModal={showModal}/>
-            <ModalProvider showModal={showModal}/>
+            <div className={'main_wrapper'}>
+                <ModalProvider showModal={showModal}/>
+            </div>
         </div>
     )
 }

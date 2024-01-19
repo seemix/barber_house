@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import i18n from 'i18next';
 
-import { assets } from '../../../assets/assets.js/';
+import { assets } from '../../../assets/';
 import css from './Langswitch.module.css';
 
 const LangSwitcher = ({ scroll }) => {

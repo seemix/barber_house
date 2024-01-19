@@ -1,0 +1,8 @@
+.caption_top_line {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.caption_top_line h4 {
+    color: var(--main);
+  }

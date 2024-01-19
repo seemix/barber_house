@@ -7,7 +7,7 @@ import css from './Slider.module.css';
 const Slider = ({ showModal }) => {
     const { t } = useTranslation();
     return (
-        <div className={css.slider}>
+        <div className={css.slider} id={'top'}>
             <div className={css.slider_overlay}>
                 <div className={css.welcome_wrapper}>
                     <motion.h1

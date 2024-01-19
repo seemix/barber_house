@@ -3,7 +3,7 @@ export const menuItems = [
     {
         id: 0,
         name: 'home',
-        to: '#top'
+        to: 'top'
     },
     {
         id: 1,
