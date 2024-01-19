@@ -14,7 +14,6 @@ const SectionCaption = ({ caption }) => {
                     custom={3}
                     initial={'hidden'}
                     whileInView={'visible'}
-                   // viewport={{ once: true }}
                     variants={lefXAnimation}
                 >
                     <RiScissorsLine size={'1.3em'}/>
@@ -23,7 +22,6 @@ const SectionCaption = ({ caption }) => {
                     custom={4}
                     initial={'hidden'}
                     whileInView={'visible'}
-                   // viewport={{ once: true }}
                     variants={rightXAnimation}
                 >
                     The Barber&apos;s house
@@ -33,7 +31,6 @@ const SectionCaption = ({ caption }) => {
                 custom={3}
                 initial={'hidden'}
                 whileInView={'visible'}
-               // viewport={{ once: true }}
                 variants={captionAnimation}
             >
                 {t(`${caption}`)}
