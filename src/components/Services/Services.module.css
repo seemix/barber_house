@@ -11,7 +11,7 @@
 }
 .price_item_wrapper {
     padding: 0 10px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 .price_item {
     display: grid;
@@ -28,7 +28,6 @@
     font-weight: 600;
     color: var(--main);
 }
-
-.service_card h4 {
-    text-align: left;
+.discounts {
+    margin-top: 25px;
 }

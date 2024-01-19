@@ -1,10 +1,12 @@
-import { Services } from '../index.js';
+import { Contacts, Footer, Services } from '../index.js';
 
 const ModalProvider = ({ showModal }) => {
     return (
         <div>
             {!showModal && <>
                 <Services/>
+                <Contacts/>
+                <Footer/>
             </>}
         </div>
     );

@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import { GiRazor } from 'react-icons/gi';
 import { RiScissors2Fill } from 'react-icons/ri';
 import { TbDiscountCheck } from 'react-icons/tb';
@@ -11,6 +12,8 @@ import { cardAnimation } from './animations.js';
 import css from './Services.module.css';
 
 const Services = () => {
+    const { t } = useTranslation();
+
     return (
         <section id={'services'}>
             <SectionCaption caption={'Services'}/>
@@ -51,9 +54,11 @@ const Services = () => {
                         <div className={css.card_icon_wrap}>
                             <TbDiscountCheck/>
                         </div>
-                        <h4>Prices are according to the client's frequency:</h4>
-                        <p><IoIosCheckmarkCircleOutline size={'1.2em'}/> every second week 10% discount</p>
-                        <p><IoIosCheckmarkCircleOutline size={'1.2em'}/> every week 20% discount</p>
+                        <h4>{t('Prices')}</h4>
+                        <div className={css.discounts}>
+                            <p><IoIosCheckmarkCircleOutline size={'1.2em'}/> {t('every1')}</p>
+                            <p><IoIosCheckmarkCircleOutline size={'1.2em'}/> {t('every2')}</p>
+                        </div>
                     </motion.div>
             </div>
         </section>

@@ -7,3 +7,5 @@ export { default as Modal } from './Modal/Modal.jsx';
 export { default as Services } from './Services/Services.jsx';
 export { default as ModalProvider } from './ModalProvider/ModalProvider.jsx';
 export { default as SectionCaption } from './SectionCaption/SectionCaption.jsx';
+export { default as Contacts } from './Contacts/Contacts.jsx';
+export { default as Footer } from './Footer/Footer.jsx';

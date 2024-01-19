@@ -34,7 +34,7 @@ const Header = () => {
             <div className={css.logo}></div>
             <div className={css.lang_switcher_wrapper}>
                 <div>
-                    <a href={'https://barberhouse.vercel.app'} target={'_blank'} rel={'noreferrer'}>
+                    <a href={'https://www.instagram.com/cipthebarber/'} target={'_blank'} rel={'noreferrer'}>
                         <FaInstagram size={'2em'}/>
                     </a>
                 </div>

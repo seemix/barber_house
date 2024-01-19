@@ -1,9 +1,11 @@
 import { AnimatePresence, motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { PiWarningOctagonBold } from 'react-icons/pi';
 
 import css from './Modal.module.css';
 
 const Modal = ({ showModal, setShowModal }) => {
+    const { t } = useTranslation();
     return (
         <>
             <AnimatePresence>
@@ -17,12 +19,12 @@ const Modal = ({ showModal, setShowModal }) => {
                             transition={{ duration: 0.2, delay: 0.1 }}
                         >
                             <div className={css.warning_icon}><PiWarningOctagonBold size={'1.5em'}/></div>
-                            <h2>Conditions</h2>
-                            <p> If not showing up for the appointment: without 6 hours prior</p>
-                            <p> 👉  A fee of 100% of the price of the treatment will be imposed.</p>
+                            <h2>{t('Conditions')}</h2>
+                            <p>{t('cond1line')}</p>
+                            <p> 👉 {t('cond2line')}</p>
 
                             <button className={css.modal_button} onClick={() => setShowModal(false)}>
-                                I agree to the terms
+                                {t('I agree to the terms')}
                             </button>
                         </motion.div>
                     </div>

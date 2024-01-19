@@ -14,7 +14,7 @@ const SectionCaption = ({ caption }) => {
                     custom={3}
                     initial={'hidden'}
                     whileInView={'visible'}
-                    viewport={{ once: true }}
+                   // viewport={{ once: true }}
                     variants={lefXAnimation}
                 >
                     <RiScissorsLine size={'1.3em'}/>
@@ -23,17 +23,17 @@ const SectionCaption = ({ caption }) => {
                     custom={4}
                     initial={'hidden'}
                     whileInView={'visible'}
-                    viewport={{ once: true }}
+                   // viewport={{ once: true }}
                     variants={rightXAnimation}
                 >
-                    The Barber's house
+                    The Barber&apos;s house
                 </motion.h4>
             </div>
             <motion.h2
-                custom={2.5}
+                custom={3}
                 initial={'hidden'}
                 whileInView={'visible'}
-                viewport={{ once: true }}
+               // viewport={{ once: true }}
                 variants={captionAnimation}
             >
                 {t(`${caption}`)}

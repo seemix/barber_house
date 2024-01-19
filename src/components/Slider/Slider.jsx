@@ -26,7 +26,7 @@ const Slider = ({ showModal }) => {
                         initial={'hidden'}
                         animate={'visible'}
                         variants={buttonAnimation}>
-                        <button className={css.booking_button}>{t('book')}</button>
+                        <button className={'booking_button'}>{t('book')}</button>
                     </motion.div>
                 </div>
             </div>

@@ -1,4 +1,8 @@
 {
+  "Conditions": "Conditions",
+  "cond1line": "If not showing up for the appointment: without 6 hours prior",
+  "cond2line": "A fee of 100% of the price of the treatment will be imposed.",
+  "I agree to the terms": "I agree to the terms",
   "lang": "EN",
   "home": "home",
   "about us": "about us",
@@ -6,5 +10,18 @@
   "contacts": "contacts",
   "welcome": "Welcome to the Barber's house",
   "book": "Make an appointment!",
-  "Services": "Services"
+  "Services": "Services",
+  "Contacts": "Contacts",
+  "Haircut & Style": "Haircut & Style",
+  "Hair wash": "Hair wash",
+  "Beard trim": "Beard trim",
+  "Haircut & Beard trim": "Haircut & Beard trim",
+  "Prices": "Prices are according to the client's frequency:",
+  "every1": "every second week 10% discount",
+  "every2": "every week 20% discount",
+  "Address": "Address",
+  "Phone": "Phone",
+  "Work hours": "Work hours",
+  "Mon-Sat": "Mon-Sat",
+  "Sun: closed": "Sun: closed"
 }

@@ -5,7 +5,8 @@
     padding: 0;
     --main_dark: #281b0a;
     --main_dark_rgb: 40, 27, 10;
-    --main: #ee770c;
+    /*--main: #ee770c;*/
+    --main: #f29900;
     --light_background: #faedd4;
     --gray: #333;
     color: var(--main_dark);
@@ -40,10 +41,26 @@ h3 {
 h4 {
     font-size: 18px;
     margin: 15px;
+    text-align: left;
+}
+h5 {
+    font-size: 16px;font-weight: 400;
 }
 
 .main_wrapper {
     margin-top: 0;
+}
+.booking_button {
+    background-color: var(--main);
+    height: 50px;
+}
+
+.booking_button:hover {
+    transform: translateY(-1px);
+}
+
+.booking_button:active {
+    transform: translateY(0);
 }
 
 .card {

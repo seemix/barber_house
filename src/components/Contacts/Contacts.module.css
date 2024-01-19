@@ -1,0 +1,25 @@
+.contact_card {
+    min-width: 320px;
+    max-width: 500px;
+    padding: 20px;
+}
+.contact_block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contact_card h4 {
+    margin-top: 20px ;
+    margin-bottom: 10px;
+}
+
+.contact_card p {
+    margin-left: 30px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.map_wrapper {
+    max-width: 95%;
+    overflow: hidden;
+}

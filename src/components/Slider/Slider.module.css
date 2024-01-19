@@ -38,18 +38,6 @@
     transform: translate(-50%, -50%);
 }
 
-.booking_button {
-    background-color: var(--main);
-    height: 50px;
-}
-
-.booking_button:hover {
-    transform: translateY(-1px);
-}
-
-.booking_button:active {
-    transform: translateY(0);
-}
 @media screen and (max-width: 800px) {
     .slider {
         height: calc(100vh - 80px);

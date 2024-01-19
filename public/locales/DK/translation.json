@@ -1,4 +1,8 @@
 {
+  "Conditions": "Betingelser",
+  "cond1line": "Hvis du ikke møder op til aftalen: uden 6 timer før",
+  "cond2line": "Der pålægges et gebyr på 100 % af prisen for behandlingen.",
+  "I agree to the terms": "Jeg accepterer vilkårene",
   "lang": "DK",
   "home": "hjem",
   "about us": "om os",
@@ -6,5 +10,18 @@
   "contacts": "kontakter",
   "welcome": "Velkommen til Frisørens hus",
   "book": "Lav en aftale!",
-  "Services": "Tjenester"
+  "Services": "Tjenester",
+  "Contacts": "Kontakter",
+  "Haircut & Style": "Klip & Stil",
+  "Hair wash": "Hårvask",
+  "Beard trim": "Skægtrim",
+  "Haircut & Beard trim": "Klipning og skæg trim",
+  "Prices": "Priserne er i henhold til kundens hyppighed:",
+  "every1": "hver anden uge 10% rabat",
+  "every2": "hver uge 20% rabat",
+  "Address": "Adresse",
+  "Phone": "Telefon",
+  "Work hours": "Arbejdstimer",
+  "Mon-Sat": "Mandag-Lørdag",
+  "Sun: closed": "Søndag: lukket"
 }
