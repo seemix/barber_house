@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 
+import { BookingButton } from '../index.js';
 import { buttonAnimation, headerAnimation } from './animations.js';
 import css from './Slider.module.css';
 
@@ -26,7 +27,7 @@ const Slider = ({ showModal }) => {
                         initial={'hidden'}
                         animate={'visible'}
                         variants={buttonAnimation}>
-                        <button className={'booking_button'}>{t('book')}</button>
+                        <BookingButton/>
                     </motion.div>
                 </div>
             </div>

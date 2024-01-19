@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { Header, Modal, ModalProvider, Slider } from './components/index.js';
+import { ArrowUp, Header, Modal, ModalProvider, Slider } from './components/index.js';
 import './App.css'
 
 function App() {
@@ -13,6 +13,7 @@ function App() {
             <div className={'main_wrapper'}>
                 <ModalProvider showModal={showModal}/>
             </div>
+            <ArrowUp/>
         </div>
     )
 }

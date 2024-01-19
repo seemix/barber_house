@@ -1,3 +1,5 @@
+export { default as ArrowUp } from './ArrowUp/ArrowUp.jsx';
+export { default as BookingButton } from './BookingButton/BookingButton.jsx';
 export { default as Header } from './Header/Header.jsx';
 export { default as Menu } from './Header/Menu/Menu.jsx';
 export { default as LangSwitcher } from './Header/LangSwitcher/LangSwitcher.jsx';

@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 
 import logo from './logo_vertical.png';
 import css from './Footer.module.css';
+import { BookingButton } from '../index.js';
 
 const Footer = () => {
     const { t } = useTranslation();
@@ -26,9 +27,7 @@ const Footer = () => {
                 </div>
                 <div>
                     <h4>Booking</h4>
-                    <button className={'booking_button'}>
-                        {t('book')}
-                    </button>
+                    <BookingButton/>
                 </div>
             </div>
         </div>

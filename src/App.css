@@ -50,18 +50,6 @@ h5 {
 .main_wrapper {
     margin-top: 0;
 }
-.booking_button {
-    background-color: var(--main);
-    height: 50px;
-}
-
-.booking_button:hover {
-    transform: translateY(-1px);
-}
-
-.booking_button:active {
-    transform: translateY(0);
-}
 
 .card {
     background-color: #fff;
