@@ -14,15 +14,15 @@ const Footer = () => {
                     <img src={logo} alt={'footer_logo'} width={120}/>
                 </div>
                 <div>
+                    <h4>Booking</h4>
+                    <BookingButton/>
+                </div>
+                <div>
                     <h4>{t('Address')}</h4>
                     <p>
                         Istedgade 28, 8700 Horsens
                     </p>
                     <MdOutlinePhoneAndroid size={'1.1em'}/> +(45) 52 64 42 96
-                </div>
-                <div>
-                    <h4>Booking</h4>
-                    <BookingButton/>
                 </div>
                 <div>
                     <h4>{t('Work hours')}</h4>
