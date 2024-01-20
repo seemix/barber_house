@@ -21,13 +21,13 @@ const Footer = () => {
                     <MdOutlinePhoneAndroid size={'1.1em'}/> +(45) 52 64 42 96
                 </div>
                 <div>
+                    <h4>Booking</h4>
+                    <BookingButton/>
+                </div>
+                <div>
                     <h4>{t('Work hours')}</h4>
                     <p>{t('Mon-Sat')} 10:00-18:00</p>
                     <p>{t('Sun: closed')}</p>
-                </div>
-                <div>
-                    <h4>Booking</h4>
-                    <BookingButton/>
                 </div>
             </div>
         </div>
