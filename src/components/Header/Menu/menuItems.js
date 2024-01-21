@@ -1,4 +1,3 @@
-
 export const menuItems = [
     {
         id: 0,
@@ -6,14 +5,14 @@ export const menuItems = [
         to: 'top'
     },
     {
-        id: 1,
-        name: 'barbers',
-        to: 'barbers'
-    },
-    {
         id: 2,
         name: 'services',
         to: 'services'
+    },
+    {
+        id: 1,
+        name: 'barbers',
+        to: 'barbers'
     },
     {
         id: 3,
