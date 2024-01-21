@@ -1,5 +1,15 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+import sl1 from './1.webp';
+import sl2 from './2.webp';
+import sl3 from './3.webp';
+import sl4 from './4.webp';
 
 import { BookingButton } from '../index.js';
 import { buttonAnimation, headerAnimation } from './animations.js';
@@ -9,27 +19,97 @@ const Slider = ({ showModal }) => {
     const { t } = useTranslation();
     return (
         <div className={css.slider} id={'top'}>
-            <div className={css.slider_overlay}>
-                <div className={css.welcome_wrapper}>
-                    <motion.h1
-                        key={showModal}
-                        custom={1}
-                        initial={'hidden'}
-                        animate={'visible'}
-                        variants={headerAnimation}
-                    >{t('welcome')}
-                    </motion.h1>
-                </div>
-                <div className={css.button_wrapper}>
-                    <motion.div
-                        key={showModal}
-                        custom={2}
-                        initial={'hidden'}
-                        animate={'visible'}
-                        variants={buttonAnimation}>
-                        <BookingButton/>
-                    </motion.div>
-                </div>
+            <Swiper
+                style={{ zIndex: 0 }}
+                autoplay={{
+                    delay: 5500,
+                    disableOnInteraction: false,
+                }}
+                effect={'fade'}
+
+                fadeEffect={{
+                    crossFade: false,
+                }}
+                pagination={{
+                    clickable: true,
+                }}
+                autoHeight={true}
+                slidesPerView={1}
+                spaceBetween={10}
+                breakpoints={{
+                    '@0.00': {
+                        slidesPerView: 1,
+                        spaceBetween: 0,
+                    },
+                    '@0.50': {
+                        slidesPerView: 1,
+                        spaceBetween: 0,
+                    },
+                    '@0.60': {
+                        slidesPerView: 1,
+                        spaceBetween: 0,
+                    },
+                    '@0.75': {
+                        slidesPerView: 2,
+                        spaceBetween: 0,
+                    },
+                    '@1.00': {
+                        slidesPerView: 2,
+                        spaceBetween: 0,
+                    },
+                    '@1.25': {
+                        slidesPerView: 3,
+                        spaceBetween: 0,
+                    },
+                    '@1.50': {
+                        slidesPerView: 3,
+                        spaceBetween: 0,
+                    },
+                    '@1.80': {
+                        slidesPerView: 3,
+                        spaceBetween: 0
+                    }
+
+                }}
+                loop={true}
+                modules={[Pagination, Navigation, Autoplay]}
+            >
+                <SwiperSlide>
+                    <img src={sl1} alt={'slide'}/>
+                    <div className={css.slider_overlay}></div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img src={sl4} alt={'slide'}/>
+                    <div className={css.slider_overlay}></div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img src={sl2} alt={'slide'}/>
+                    <div className={css.slider_overlay}></div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img src={sl3} alt={'slide'}/>
+                    <div className={css.slider_overlay}></div>
+                </SwiperSlide>
+            </Swiper>
+            <div className={css.welcome_wrapper}>
+                <motion.h1
+                    key={showModal}
+                    custom={1}
+                    initial={'hidden'}
+                    animate={'visible'}
+                    variants={headerAnimation}
+                >{t('welcome')}
+                </motion.h1>
+            </div>
+            <div className={css.button_wrapper}>
+                <motion.div
+                    key={showModal}
+                    custom={2}
+                    initial={'hidden'}
+                    animate={'visible'}
+                    variants={buttonAnimation}>
+                    <BookingButton/>
+                </motion.div>
             </div>
         </div>
     );
