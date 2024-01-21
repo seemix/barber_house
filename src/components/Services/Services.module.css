@@ -1,6 +1,7 @@
 .service_card {
     max-width: 320px;
     width: 320px;
+    padding: 20px;
 }
 .card_icon_wrap {
     font-size: 50px;

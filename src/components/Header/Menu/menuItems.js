@@ -7,8 +7,8 @@ export const menuItems = [
     },
     {
         id: 1,
-        name: 'about us',
-        to: 'about'
+        name: 'barbers',
+        to: 'barbers'
     },
     {
         id: 2,

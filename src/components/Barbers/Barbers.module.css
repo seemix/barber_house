@@ -1,0 +1,29 @@
+.barber_pic_wrapper {
+    width: 300px;
+    height: 260px;
+    overflow: hidden;
+}
+
+.barber_pic {
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 300px;
+    height: 260px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    transition: transform .4s ease-in-out;
+
+}
+.barber_pic:hover {
+    transform: scale(1.07);
+}
+.barber_bottom {
+    margin: 20px;
+}
+.barber_bottom h3 {
+    font-size: 20px;
+}
+.barber_bottom h4 {
+    text-align: center;
+    font-size: 16px;
+}
