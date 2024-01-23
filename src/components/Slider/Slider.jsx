@@ -6,10 +6,11 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-import sl1 from './1.webp';
 import sl2 from './2.webp';
 import sl3 from './3.webp';
 import sl4 from './4.webp';
+import sl5 from './5.webp';
+import sl6 from './6.webp';
 
 import { BookingButton } from '../index.js';
 import { buttonAnimation, headerAnimation } from './animations.js';
@@ -74,16 +75,24 @@ const Slider = ({ showModal }) => {
                 loop={true}
                 modules={[Pagination, Navigation, Autoplay]}
             >
+                {/*<SwiperSlide>*/}
+                {/*    <img src={sl1} alt={'slide'}/>*/}
+                {/*    <div className={css.slider_overlay}></div>*/}
+                {/*</SwiperSlide>*/}
                 <SwiperSlide>
-                    <img src={sl1} alt={'slide'}/>
+                    <img src={sl5} alt={'slide'}/>
                     <div className={css.slider_overlay}></div>
                 </SwiperSlide>
-                <SwiperSlide>
-                    <img src={sl4} alt={'slide'}/>
-                    <div className={css.slider_overlay}></div>
-                </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={sl4} alt={'slide'}/>
+                        <div className={css.slider_overlay}></div>
+                    </SwiperSlide>
                 <SwiperSlide>
                     <img src={sl2} alt={'slide'}/>
+                    <div className={css.slider_overlay}></div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img src={sl6} alt={'slide'}/>
                     <div className={css.slider_overlay}></div>
                 </SwiperSlide>
                 <SwiperSlide>

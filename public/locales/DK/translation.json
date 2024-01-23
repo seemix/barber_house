@@ -5,9 +5,8 @@
   "I agree to the terms": "Jeg accepterer vilkårene",
   "lang": "DK",
   "home": "hjem",
-  "barbers": "barberer",
-  "Barbers": "Barberer",
   "about us": "om os",
+  "About us": "Om os",
   "services": "tjenester",
   "contacts": "kontakter",
   "welcome": "Velkommen til Frisørens Hus",
@@ -25,5 +24,9 @@
   "Phone": "Telefon",
   "Work hours": "Arbejdstimer",
   "Mon-Sat": "Mandag-Lørdag",
-  "Sun: closed": "Søndag: lukket"
+  "Sun: closed": "Søndag: lukket",
+
+  "about_p1": "Mit navn er Ciprian Maftei, og det, der startede som en hobby for mig, er vokset til en passion, og nu er det blevet mit drømmejob.",
+  "about_p2": "Jeg guider mit håndværk ud fra et simpelt, men stærkt motto: 'Attitude is Everything'. I mit arbejde er dette motto en konstant påmindelse om, at en god klipning er nøglen til at skabe en attitude, der udstråler selvtillid, succes og positivitet. Jeg forstår, at når du ser godt ud, føler du dig fantastisk, og det er det, jeg sigter efter at opnå med enhver kunde, der går gennem dørene.",
+  "about_p3": "Mens jeg arbejder, nyder jeg at lære mine kunder at kende, forstå deres stile og deres historier. Disse interaktioner gør en rutinemæssig klipning til en personlig oplevelse. Jeg er her for at skabe et look, der passer til dig, og i processen opbygge varige forbindelser, der rækker ud over barberstolen. Deltag i Barber's House-fællesskabet. Jeg ser frem til at byde dig velkommen og skabe en stil, der handler om dig!"
 }

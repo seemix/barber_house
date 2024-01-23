@@ -5,8 +5,8 @@
   "I agree to the terms": "I agree to the terms",
   "lang": "EN",
   "home": "home",
-  "barbers": "barbers",
-  "Barbers": "Barbers",
+  "about us": "about us",
+  "About us": "About us",
   "services": "services",
   "contacts": "contacts",
   "welcome": "Welcome to Barber's House",
@@ -24,5 +24,9 @@
   "Phone": "Phone",
   "Work hours": "Work hours",
   "Mon-Sat": "Mon-Sat",
-  "Sun: closed": "Sun: closed"
+  "Sun: closed": "Sun: closed",
+
+  "about_p1":  "I'm Ciprian Maftei, and what started as a hobby for me has grown into a passion and now it became my dream job.",
+  "about_p2": "I guide my craft by a simple yet powerful motto: 'Attitude is Everything'. In my work, this motto is a constant reminder that a good haircut is key in crafting an attitude that speaks of confidence, success, and positivity. I understand that when you look great, you feel great, and that's what I aim to achieve with every client who walks through the doors.",
+  "about_p3": "As I work, I enjoy getting to know my clients, understanding their styles, and their stories. These interactions turn a routine haircut into a personalized experience. I am here to craft a look that suits you, and in the process, build lasting connections that go beyond the barber chair. Join the Barber's House community. Looking forward to welcoming you and creating a style that’s all about you!"
 }

@@ -7,23 +7,42 @@
 .barber_pic {
     background-repeat: no-repeat;
     background-position: center;
-    width: 300px;
+    width: 260px;
     height: 260px;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
+    border-radius: 50%;
+    /*border-top-left-radius: 6px;*/
+    /*border-top-right-radius: 6px;*/
+    margin: 0 auto;
     transition: transform .4s ease-in-out;
 
 }
-.barber_pic:hover {
-    transform: scale(1.07);
-}
+
+/*.barber_pic:hover {*/
+/*    transform: scale(1.07);*/
+/*}*/
 .barber_bottom {
     margin: 20px;
 }
+
 .barber_bottom h3 {
     font-size: 20px;
 }
+
 .barber_bottom h4 {
     text-align: center;
     font-size: 16px;
+}
+
+.about_card {
+    max-width: 1200px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+    .about_card {
+        grid-template-columns: 1fr;
+    }
 }

@@ -11,8 +11,8 @@ export const menuItems = [
     },
     {
         id: 1,
-        name: 'barbers',
-        to: 'barbers'
+        name: 'about us',
+        to: 'about us'
     },
     {
         id: 3,
