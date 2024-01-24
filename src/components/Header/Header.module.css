@@ -7,7 +7,7 @@
     justify-content: space-evenly;
     align-items: center;
     gap: 15px;
-    color: whitesmoke;
+    color: var(--white);
     position: fixed;
     z-index: 1;
     transition: all 0.4s ease-in-out;

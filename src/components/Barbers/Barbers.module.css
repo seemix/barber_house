@@ -10,16 +10,11 @@
     width: 260px;
     height: 260px;
     border-radius: 50%;
-    /*border-top-left-radius: 6px;*/
-    /*border-top-right-radius: 6px;*/
     margin: 0 auto;
     transition: transform .4s ease-in-out;
 
 }
 
-/*.barber_pic:hover {*/
-/*    transform: scale(1.07);*/
-/*}*/
 .barber_bottom {
     margin: 20px;
 }

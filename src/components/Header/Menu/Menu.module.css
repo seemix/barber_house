@@ -27,7 +27,7 @@
 }
 
 .nav_link:hover {
-    box-shadow: 0 -3px 0 whitesmoke inset,
+    box-shadow: 0 -3px 0 var(--white) inset,
     500px 0 0 rgba(255, 255, 255, 0.03) inset;
 }
 
@@ -63,7 +63,7 @@
     }
 
     .nav_link:hover {
-        box-shadow: 0 0 0 whitesmoke inset,
+        box-shadow: 0 0 0 var(--white) inset,
         800px 0 0 rgba(255, 255, 255, 0.03) inset;
     }
 }

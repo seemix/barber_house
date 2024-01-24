@@ -1,7 +1,7 @@
 .footer_wrapper {
     width: 100%;
     background-color: var(--main_dark);
-    color: whitesmoke;
+    color: var(--white);
     display: flex;
     justify-content: center;
     padding: 20px;
@@ -12,13 +12,13 @@
     display: flex;
     width: 100%;
     justify-content: space-evenly;
-    color: whitesmoke;
+    color: var(--white);
     font-size: 14px;
     flex-wrap: wrap;
     gap: 30px;
 }
 .footer_content h4 {
-    color: whitesmoke;
+    color: var(--white);
     margin-left: 0;
     text-align: center;
 }
