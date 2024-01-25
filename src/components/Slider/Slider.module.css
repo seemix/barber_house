@@ -48,7 +48,8 @@
 
 @media screen and (max-width: 800px) {
     .slider {
-        height: calc(100vh - 80px);
+        max-height: calc(100vh - 80px);
+        overflow: hidden;
         top: 80px;
     }
 }
