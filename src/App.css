@@ -96,6 +96,9 @@ section {
     background-color: var(--light_background);
     margin: 0;
 }
+.swiper-pagination-bullet-active {
+    background-color: var(--main);
+}
 
 @media screen and (max-width: 800px) {
     .main_wrapper {
