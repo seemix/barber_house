@@ -17,7 +17,7 @@ import { buttonAnimation, headerAnimation } from './animations.js';
 import css from './Slider.module.css';
 
 const Slider = ({ showModal }) => {
-    const slides = [sl2, sl3, sl4, sl5, sl6];
+    const slides = [sl2, sl5, sl3, sl4, sl6];
     const { t } = useTranslation();
     return (
         <div className={css.slider} id={'top'}>
