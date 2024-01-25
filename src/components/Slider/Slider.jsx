@@ -17,13 +17,14 @@ import { buttonAnimation, headerAnimation } from './animations.js';
 import css from './Slider.module.css';
 
 const Slider = ({ showModal }) => {
+    const slides = [sl2, sl3, sl4, sl5, sl6];
     const { t } = useTranslation();
     return (
         <div className={css.slider} id={'top'}>
             <Swiper
                 style={{ zIndex: 0 }}
                 autoplay={{
-                    delay: 5500,
+                    delay: 6500,
                     disableOnInteraction: false,
                 }}
                 effect={'fade'}
@@ -75,30 +76,12 @@ const Slider = ({ showModal }) => {
                 loop={true}
                 modules={[Pagination, Navigation, Autoplay]}
             >
-                {/*<SwiperSlide>*/}
-                {/*    <img src={sl1} alt={'slide'}/>*/}
-                {/*    <div className={css.slider_overlay}></div>*/}
-                {/*</SwiperSlide>*/}
-                <SwiperSlide>
-                    <img src={sl5} alt={'slide'}/>
-                    <div className={css.slider_overlay}></div>
-                </SwiperSlide>
-                    <SwiperSlide>
-                        <img src={sl4} alt={'slide'}/>
+                {
+                    slides.map((slide, index) => <SwiperSlide key={index}>
+                        <div className={css.slider_image} style={{ backgroundImage: `url(${slide})` }}></div>
                         <div className={css.slider_overlay}></div>
-                    </SwiperSlide>
-                <SwiperSlide>
-                    <img src={sl2} alt={'slide'}/>
-                    <div className={css.slider_overlay}></div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={sl6} alt={'slide'}/>
-                    <div className={css.slider_overlay}></div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={sl3} alt={'slide'}/>
-                    <div className={css.slider_overlay}></div>
-                </SwiperSlide>
+                    </SwiperSlide>)
+                }
             </Swiper>
             <div className={css.welcome_wrapper}>
                 <motion.h1
