@@ -8,7 +8,7 @@ const BookingButton = () => {
     const { t } = useTranslation();
 
     return (
-        <motion.button className={css.booking_button}
+        <motion.button className={css.booking_button + ' booking'}
                        variants={bookingButtonAnimation}
                        initial={'hidden'}
                        animate={'visible'}
