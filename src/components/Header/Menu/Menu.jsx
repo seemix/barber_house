@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { menuItems } from './menuItems.js';
 import css from './Menu.module.css';
 
-// eslint-disable-next-line react/prop-types
+
 const Menu = ({ openMenu }) => {
     const { t } = useTranslation();
 
