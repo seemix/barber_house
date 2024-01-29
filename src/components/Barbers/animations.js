@@ -19,6 +19,6 @@ export const barberPictureAnimation = {
         opacity: 1,
         filter: 'blur(0)',
         scale: 1,
-        transition: { delay: custom * 0.3, duration: 0.2, ease: 'easeInOut' }
+        transition: { delay: custom * .3, duration: .2, ease: 'easeInOut' }
     })
 };
