@@ -1,5 +1,5 @@
 :root {
-    --bar-width: 30px;
+    --bar-width: 27px;
     --bar-height: 3px;
     --hamburger-gap: 5px;
     --foreground: #333;
@@ -10,6 +10,7 @@
 }
 .button_wrapper {
     width: 35px;
+    margin-right: 10px;
 }
 .hamburger_menu {
     --x-width: calc(var(--hamburger-height) * 1.41421356237);

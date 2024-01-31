@@ -43,10 +43,8 @@ const Header = () => {
             <div ref={menuRef}>
                 <Menu openMenu={openMenu} setOpenMenu={setOpenMenu}/>
             </div>
-            <div>
-                <div ref={menuRef} className={css.burger_button} onClick={clickMenu}>
-                    <MenuButton openMenu={openMenu}/>
-                </div>
+            <div ref={menuRef} className={css.burger_button} onClick={clickMenu}>
+                <MenuButton openMenu={openMenu}/>
             </div>
         </div>
     );

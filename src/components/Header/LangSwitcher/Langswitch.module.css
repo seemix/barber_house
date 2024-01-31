@@ -1,13 +1,12 @@
 .menu_wrapper {
-    display: block;
+    display: flex;
     height: 100%;
-    margin-left: -20px;
-    /*margin: 0;*/
-    padding: 10px 0;
+    margin-top: 5px;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu_parent {
-    padding: 0 10px;
     cursor: pointer;
 }
 
@@ -24,6 +23,7 @@
 .menu_wrapper ul {
     list-style: none;
     margin: 0;
+    padding: 0;
     display: block;
 }
 
@@ -53,7 +53,7 @@
 
 .menu_wrapper ul li ul {
     float: left;
-    left: -17px;
+    left: -25px;
     opacity: 0;
     padding: 15px 0;
     position: absolute;

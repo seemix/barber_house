@@ -27,7 +27,7 @@
 
 .lang_switcher_wrapper {
     display: flex;
-    gap: 15px;
+    gap: 25px;
 }
 
 .burger_button {
@@ -38,7 +38,7 @@
     .header_wrapper {
         background-color: var(--main_dark);
         gap: 5px;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
     .logo {
@@ -51,7 +51,5 @@
         display: block;
     }
 
-    .lang_switcher_wrapper {
-        gap: 5px;
-    }
+
 }
