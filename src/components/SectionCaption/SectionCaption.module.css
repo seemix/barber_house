@@ -5,4 +5,5 @@
 }
 .caption_top_line h4 {
     color: var(--main);
+    margin: 20px 3px;
   }
