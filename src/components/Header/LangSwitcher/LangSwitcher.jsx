@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import i18n from 'i18next';
 
 import { assets } from '../../../assets/assets.js';
-import css from './LangSwitch.module.css';
+import css from './Langswitch.module.css';
 
 const LangSwitcher = ({ scroll }) => {
     const [language, setLanguage] = useState('');
