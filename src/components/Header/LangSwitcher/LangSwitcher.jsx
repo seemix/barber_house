@@ -1,26 +1,29 @@
-import { useTranslation } from 'react-i18next';
+import { useEffect, useState } from 'react';
 import i18n from 'i18next';
 
-import { assets } from '../../../assets/';
-import css from './Langswitch.module.css';
+import { assets } from '../../../assets/assets.js';
+import css from './LangSwitch.module.css';
 
 const LangSwitcher = ({ scroll }) => {
-    const changeLanguage = (lang) => {
-        i18n.changeLanguage(lang).then();
+    const [language, setLanguage] = useState('');
+    useEffect(() => {
+        setLanguage(i18n.language.slice(0, 2).toUpperCase());
+    }, []);
+    const changeLanguage = async (lang) => {
+        await i18n.changeLanguage(lang);
+        setLanguage(lang);
     }
-    const { t } = useTranslation();
 
     return (
         <div className={css.menu_wrapper}>
             <ul>
                 <li>
-                    <span className={css.menu_parent}>{t('lang')}<i className={css.arrow_right}></i></span>
+                    <span className={css.menu_parent}>{language}<i className={css.arrow_right}></i></span>
                     <ul>
-                        {
-                            assets.languages.filter(item => item !== i18n.language).map(item =>
-                                <li className={scroll ? css.scroll_background : ''} key={item}>
-                                    <span onClick={() => changeLanguage(item)}>{item}</span>
-                                </li>)
+                        {assets.languages.filter(item => item !== language).map(item =>
+                            <li className={scroll ? css.scroll_background : ''} key={item}>
+                                <span onClick={() => changeLanguage(item)}>{item}</span>
+                            </li>)
                         }
                     </ul>
                 </li>

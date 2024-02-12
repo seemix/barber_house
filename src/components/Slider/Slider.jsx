@@ -28,8 +28,6 @@ const Slider = ({ showModal }) => {
                     disableOnInteraction: false,
                 }}
                 effect={'fade'}
-                lazy={true}
-
                 fadeEffect={{
                     crossFade: false,
                 }}
