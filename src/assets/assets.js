@@ -1,4 +1,4 @@
 export const assets =  {
-    languages: ['EN', 'DK'],
+    languages: ['en', 'dk'],
     currency: 'DKK'
 }
