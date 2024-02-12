@@ -14,6 +14,7 @@ const LangSwitcher = ({ scroll }) => {
         setLanguage(lang);
     }
 
+
     return (
         <div className={css.menu_wrapper}>
             <ul>
