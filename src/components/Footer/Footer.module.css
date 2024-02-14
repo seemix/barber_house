@@ -30,4 +30,7 @@
     .logo img {
         width: 300px;
     }
+    .footer_content {
+        flex-direction: column;
+    }
 }
