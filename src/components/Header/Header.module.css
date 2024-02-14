@@ -38,15 +38,20 @@
         justify-content: space-between;
     }
 
-    .logo {
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 215px;
+    .logo img {
+        width: 160px;
     }
 
     .burger_button {
         display: block;
     }
+}
 
-
+@media screen and (max-width: 340px) {
+    .header_wrapper {
+        gap: 10px;
+    }
+    .lang_switcher_wrapper {
+        gap: 10px;
+    }
 }
