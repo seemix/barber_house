@@ -23,3 +23,11 @@
     margin-left: 0;
     text-align: center;
 }
+.logo img {
+    width: 220px;
+}
+@media only screen and (orientation: portrait) {
+    .logo img {
+        width: 300px;
+    }
+}

@@ -10,8 +10,8 @@ const Footer = () => {
     return (
         <div className={css.footer_wrapper}>
             <div className={css.footer_content}>
-                <div>
-                    <img src={logo} alt={'footer_logo'} width={200}/>
+                <div className={css.logo}>
+                    <img src={logo} alt={'footer_logo'}/>
                 </div>
                 <div>
                     <h4>Booking</h4>
