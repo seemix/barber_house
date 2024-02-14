@@ -3,6 +3,7 @@ import { FaInstagram } from 'react-icons/fa';
 
 import { useOutsideClick } from '../../hooks/outsideClick.js';
 import { LangSwitcher, Menu, MenuButton } from '../index.js';
+import logo from './logo.webp';
 import css from './Header.module.css';
 
 const Header = () => {
@@ -31,7 +32,9 @@ const Header = () => {
 
     return (
         <div className={!scroll ? css.header_wrapper : css.header_wrapper + ' ' + css.scroll}>
-            <div className={css.logo}></div>
+            <div className={css.logo}>
+                <img src={logo} alt={'logo'}/>
+            </div>
             <div className={css.lang_switcher_wrapper}>
                 <div>
                     <a href={'https://www.instagram.com/cipthebarber/'} target={'_blank'} rel={'noreferrer'}>

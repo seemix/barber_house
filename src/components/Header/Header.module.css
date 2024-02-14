@@ -17,12 +17,9 @@
     background-color: var(--main_dark);
 }
 
-.logo {
-    background-image: url("./Logo_hor.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 220px;
-    height: 78px;
+
+.logo img {
+    width: 170px;
 }
 
 .lang_switcher_wrapper {
