@@ -3,8 +3,10 @@
 #root {
     margin: 0;
     padding: 0;
-    --main_dark: #281b0a;
-    --main_dark_rgb: 40, 27, 10;
+    /*--main_dark: #281b0a;*/
+    --main_dark: #181818;
+    /*--main_dark_rgb: 40, 27, 10;*/
+    --main_dark_rgb: 24, 24, 24;
     --main: #f29900;
     --light_background: #faedd4;
     --gray: #333;

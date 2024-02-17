@@ -24,11 +24,11 @@
     text-align: center;
 }
 .logo img {
-    width: 220px;
+    width: 200px;
 }
 @media only screen and (orientation: portrait) {
     .logo img {
-        width: 300px;
+        width: 220px;
     }
     .footer_content {
         flex-direction: column;
