@@ -98,6 +98,7 @@ section {
     background-color: var(--light_background);
     margin: 0;
 }
+
 .swiper-pagination-bullet-active {
     background-color: var(--main);
 }
