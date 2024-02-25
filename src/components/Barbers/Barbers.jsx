@@ -19,15 +19,6 @@ const Barbers = () => {
                         variants={barberCardAnimation}
 
             >
-                {/*<div className={'card'}>*/}
-                {/*    <div className={css.barber_pic_wrapper}>*/}
-                {/*        <div className={css.barber_pic} style={{ backgroundImage: `url(${barber1}` }}></div>*/}
-                {/*    </div>*/}
-                {/*    <div className={css.barber_bottom}>*/}
-                {/*        <h3>Ciprian Maftei</h3>*/}
-                {/*        <h4>top barber</h4>*/}
-                {/*    </div>*/}
-                {/*</div>*/}
                 <div className={'card ' + css.about_card}>
                     <motion.div className={css.barber_pic} style={{ backgroundImage: `url(${barber1}` }}
                                 custom={2}
