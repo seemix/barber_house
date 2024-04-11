@@ -37,7 +37,7 @@ const Header = () => {
             </div>
             <div className={css.lang_switcher_wrapper}>
                 <div>
-                    <a href={'https://www.instagram.com/cipthebarber/'} target={'_blank'} rel={'noreferrer'}>
+                    <a href={'https://www.instagram.com/barbershouse.dk/'} target={'_blank'} rel={'noreferrer'}>
                         <FaInstagram size={'2em'}/>
                     </a>
                 </div>

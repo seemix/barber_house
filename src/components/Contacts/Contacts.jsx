@@ -33,18 +33,17 @@ const Contacts = () => {
                         </div>
                         <div>
                             <h4><FaInstagram/> Instagram</h4>
-                            <a href={'https://www.instagram.com/cipthebarber/'} target={'_blank'} rel={'noreferrer'}>
-                                <p>@cipthebarber</p>
+                            <a href={'https://www.instagram.com/barbershouse.dk/'} target={'_blank'} rel={'noreferrer'}>
+                                <p>@barbershouse.dk</p>
                             </a>
                         </div>
                         <div>
-                            <h4><AiOutlineSchedule/>{t('Work hours')} </h4>
+                            <h4><AiOutlineSchedule/> {t('Work hours')} </h4>
                             <p> {t('Mon-Sat')} 10:00-18:00</p>
                             <p>{t('Sun: closed')}</p>
                         </div>
                     </div>
                 </motion.div>
-
                 <motion.div className={css.map_wrapper}
                             custom={3}
                             initial={'hidden'}
