@@ -29,7 +29,7 @@ const Slider = ({ showModal }) => {
                 }}
                 effect={'fade'}
                 fadeEffect={{
-                    crossFade: false,
+                    crossFade: true,
                 }}
                 pagination={{
                     clickable: true,
