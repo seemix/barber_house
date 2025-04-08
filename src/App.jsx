@@ -4,7 +4,7 @@ import { ArrowUp, Header, Modal, ModalProvider, Slider } from './components/inde
 import './App.css'
 
 function App() {
-    const [showModal, setShowModal] = useState(true);
+    const [showModal, setShowModal] = useState(false);
     return (
         <div className={'wrapper'}>
             <Modal showModal={showModal} setShowModal={setShowModal}/>

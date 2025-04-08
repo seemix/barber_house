@@ -9,6 +9,7 @@
     --light_background: rgba(250, 237, 212, 0.7);
     --gray: #333;
     --white: whitesmoke;
+    --light_gray: #f4f4f4;
     color: var(--main_dark);
 }
 
