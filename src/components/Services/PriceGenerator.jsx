@@ -14,7 +14,7 @@ const PriceGenerator = ({ data }) => {
                     <div className={css.price_item}>
                         <IoTimeOutline size={'1.2em'}/>
                         <div>{item.time} min.</div>
-                        <div></div>
+                        <div/>
                         <div className={css.price}>
                             <h4>{item.price} {assets.currency}</h4>
                         </div>

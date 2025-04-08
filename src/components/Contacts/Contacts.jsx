@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { MdOutlineLocationOn } from 'react-icons/md';
 import { MdOutlinePhoneAndroid } from 'react-icons/md';
 import { FaInstagram } from 'react-icons/fa';
+import { FaFacebookF } from 'react-icons/fa6';
 import { AiOutlineSchedule } from 'react-icons/ai';
 import { motion } from 'framer-motion';
 
@@ -28,7 +29,7 @@ const Contacts = () => {
                             <p>Istedgade 28, 8700 Horsens</p>
                         </div>
                         <div>
-                            <h4><MdOutlinePhoneAndroid/>{t('Phone')}</h4>
+                            <h4><MdOutlinePhoneAndroid/> {t('Phone')}</h4>
                             <p>+(45) 52 64 42 96</p>
                         </div>
                         <div>
@@ -36,6 +37,11 @@ const Contacts = () => {
                             <a href={'https://www.instagram.com/barbershouse.dk/'} target={'_blank'} rel={'noreferrer'}>
                                 <p>@barbershouse.dk</p>
                             </a>
+                        </div>
+                        <div>
+                            <h4><FaFacebookF/> Facebook</h4>
+                            <p><a href={'https://www.facebook.com/profile.php?id=61561004574122'} target={'_blank'}
+                                  rel={'noreferrer'}>Barber's House Horsens</a></p>
                         </div>
                         <div>
                             <h4><AiOutlineSchedule/> {t('Work hours')} </h4>
@@ -53,7 +59,7 @@ const Contacts = () => {
                 >
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1119.235268577447!2d9.837897137360839!3d55.871852082814904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c6313df98d777%3A0xe5656fd7b108cffd!2sIstedgade%2028%2C%208700%20Horsens%2C%20Denmark!5e0!3m2!1sen!2sua!4v1705695275012!5m2!1sen!2sua"
-                        width="500px" height="450" style={{ border: 0, borderRadius: '6px' }} loading="lazy">
+                        width="500px" height="550" style={{ border: 0, borderRadius: '6px' }} loading="lazy">
                     </iframe>
                 </motion.div>
             </div>

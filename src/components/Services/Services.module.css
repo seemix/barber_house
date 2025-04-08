@@ -5,7 +5,7 @@
 }
 .card_icon_wrap {
     font-size: 50px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     color: var(--main);
     display: block;
     text-align: center;
@@ -30,5 +30,5 @@
     color: var(--main);
 }
 .discounts {
-    margin-top: 25px;
+    /*margin-top: 25px;*/
 }

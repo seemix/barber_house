@@ -54,10 +54,12 @@ const Services = () => {
                         <div className={css.card_icon_wrap}>
                             <TbDiscountCheck/>
                         </div>
-                        <h4>{t('Prices')}</h4>
+                        <h4 style={{fontSize: '1em', marginTop: 0}}>{t('Prices')}</h4>
                         <div className={css.discounts}>
                             <p><IoIosCheckmarkCircleOutline size={'1.2em'}/> {t('every1')}</p>
                             <p><IoIosCheckmarkCircleOutline size={'1.2em'}/> {t('every2')}</p>
+                            <p><IoIosCheckmarkCircleOutline size={'1.2em'}/> Here you can pay with MobilePay</p>
+
                         </div>
                     </motion.div>
             </div>
