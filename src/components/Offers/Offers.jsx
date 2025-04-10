@@ -1,4 +1,4 @@
-import { SectionCaption } from '../index.js';
+import { BookingButton, SectionCaption } from '../index.js';
 import css from './Offers.module.css';
 
 const Offers = () => {
@@ -7,25 +7,14 @@ const Offers = () => {
             <SectionCaption caption={'Special Offers'}/>
             <div className={'content_wrapper'}>
                 <div className={'card ' + css.offers_card}>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aut commodi ducimus, excepturi id
-                    provident quos vero voluptates. A, ad alias, aliquid corporis enim error eum eveniet ex
-                    exercitationem
-                    expedita impedit in incidunt inventore itaque maiores non, officiis quaerat reiciendis sapiente sit
-                    totam veniam voluptatem! Eveniet iure nam nisi quis!
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aut commodi ducimus, excepturi id
-                        provident quos vero voluptates. A, ad alias, aliquid corporis enim error eum eveniet ex
-                        exercitationem
-                        expedita impedit in incidunt inventore itaque maiores non, officiis quaerat reiciendis sapiente sit
-                        totam veniam voluptatem! Eveniet iure nam nisi quis!
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aut commodi ducimus, excepturi id
-                        provident quos vero voluptates. A, ad alias, aliquid corporis enim error eum eveniet ex
-                        exercitationem
-                        expedita impedit in incidunt inventore itaque maiores non, officiis quaerat reiciendis sapiente sit
-                        totam veniam voluptatem! Eveniet iure nam nisi quis!
-                    </p>
+                    <h4>Special Offer</h4>
+
+                    <p>Bring a Friend – Get Rewarded!
+                        Book your haircut together with a friend and you’ll both get 30% off your next visit.
+                        Fresh fades, good vibes, and a deal worth sharing.</p>
+
+                    <div className={css.center}><p><b>Offer valid for a limited time. Don’t miss out!</b></p>
+                        <BookingButton/></div>
                 </div>
             </div>
 

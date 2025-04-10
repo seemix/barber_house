@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 
 import { barberCardAnimation, barberPictureAnimation } from './animations.js';
 import { SectionCaption } from '../index.js';
-import barber1 from './barber1.webp';
 import css from './Barbers.module.css';
 
 const Barbers = () => {
@@ -20,41 +19,24 @@ const Barbers = () => {
 
             >
                 <div className={'card ' + css.about_card}>
-                    <motion.div className={css.barber_pic} style={{ backgroundImage: `url(${barber1}` }}
+                    <motion.div className={css.about_text}
+                                custom={3}
+                                initial={'hidden'}
+                                whileInView={'visible'}
+                                viewport={{ once: true }}
+                                variants={barberCardAnimation}>
+                        <p>{t('about_p1')}</p>
+                        <p>{t('about_p2')}  </p>
+                        <p>{t('about_p3')}</p>
+                        <p>{t('about_p4')}</p>
+                        <p>{t('about_p5')}</p>
+                    </motion.div>
+                    <motion.div className={css.about_image}
                                 custom={2}
                                 initial={'hidden'}
                                 whileInView={'visible'}
                                 viewport={{ once: true }}
-                                variants={barberPictureAnimation}
-                    >
-
-                    </motion.div>
-                    <div>
-                        <motion.p
-                            custom={2.5}
-                            initial={'hidden'}
-                            whileInView={'visible'}
-                            viewport={{ once: true }}
-                            variants={barberCardAnimation}>{t('about_p1')}
-                        </motion.p>
-                        <motion.p
-                            custom={3}
-                            initial={'hidden'}
-                            whileInView={'visible'}
-                            viewport={{ once: true }}
-                            variants={barberCardAnimation}
-                        >{t('about_p2')}
-                        </motion.p>
-                        <motion.p
-                            custom={3.5}
-                            initial={'hidden'}
-                            whileInView={'visible'}
-                            viewport={{ once: true }}
-                            variants={barberCardAnimation}
-                        >
-                            {t('about_p3')}
-                        </motion.p>
-                    </div>
+                                variants={barberPictureAnimation}/>
                 </div>
             </motion.div>
         </section>

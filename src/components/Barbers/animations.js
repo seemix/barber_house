@@ -12,13 +12,12 @@ export const barberCardAnimation = {
 export const barberPictureAnimation = {
     hidden: {
         opacity: 0,
-        filter: 'blur(150px)',
-        scale: .9
+        filter: 'blur(20px)',
     },
     visible: custom => ({
         opacity: 1,
         filter: 'blur(0)',
-        scale: 1,
-        transition: { delay: custom * .3, duration: .2, ease: 'easeInOut' }
+        // scale: 1,
+        transition: { delay: custom * .3, duration: .5, ease: 'easeInOut' }
     })
 };
