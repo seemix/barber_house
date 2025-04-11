@@ -6,8 +6,8 @@ import { IoIosCheckmarkCircleOutline } from 'react-icons/io';
 import { motion } from 'framer-motion';
 
 import { SectionCaption } from '../index.js';
-import { block1, block2 } from './data.js';
 import PriceGenerator from './PriceGenerator.jsx';
+import { block1, block2 } from './data.js';
 import { cardAnimation, highLightAnimation } from './animations.js';
 import css from './Services.module.css';
 

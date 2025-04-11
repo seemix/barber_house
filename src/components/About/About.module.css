@@ -13,33 +13,34 @@
 
 .about_card {
     max-width: 1100px;
-    display: grid;
-    grid-template-columns: auto 1fr;
+    display: flex;
+    /*display: grid;*/
+    /*grid-template-columns: auto 1fr;*/
     gap: 10px;
 }
 
 .about_image {
     aspect-ratio: 587 / 662;
     min-width: 380px;
+    width: 420px;
     background-image: url("./barber1.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border-bottom-right-radius: 6px;
     border-top-right-radius: 6px;
+    margin: 0 auto;
 }
 
 .about_text {
     padding: 25px 25px 25px 30px;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
     .about_card {
-        grid-template-columns: 1fr;
+        flex-direction: column-reverse;
     }
     .about_image {
-        border-bottom-right-radius: 6px;
-        border-bottom-left-radius: 6px;
-        border-top-right-radius: 0;
+        /*border-radius: 6px 6px 0 0;*/
     }
 }

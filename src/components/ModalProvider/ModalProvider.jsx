@@ -5,9 +5,9 @@ const ModalProvider = ({ showModal }) => {
         <>
             {!showModal && <>
                 <Services/>
+                <Offers/>
                 <Contacts/>
                 <About/>
-                <Offers/>
                 <Faq/>
                 <Footer/>
             </>}

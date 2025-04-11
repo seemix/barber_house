@@ -11,13 +11,15 @@ import sl3 from './3.webp';
 import sl4 from './4.webp';
 import sl5 from './5.webp';
 import sl6 from './6.webp';
+import sl7 from './7.webp';
+import sl8 from './8.webp';
 
 import { BookingButton } from '../index.js';
 import { buttonAnimation, headerAnimation } from './animations.js';
 import css from './Slider.module.css';
 
 const Slider = ({ showModal }) => {
-    const slides = [sl2, sl3, sl5, sl4, sl6];
+    const slides = [sl2, sl8, sl3, sl5, sl6, sl7, sl4];
     const { t } = useTranslation();
     return (
         <div className={css.slider} id={'top'}>

@@ -10,6 +10,11 @@ export const menuItems = [
         to: 'services'
     },
     {
+        id: 4,
+        name: 'offers',
+        to: 'specialOffers'
+    },
+    {
         id: 3,
         name: 'contacts',
         to: 'contacts'
@@ -19,11 +24,7 @@ export const menuItems = [
         name: 'about us',
         to: 'about us'
     },
-    {
-        id: 4,
-        name: 'offers',
-        to: 'specialOffers'
-    },
+
     {
         id: 5,
         name: 'FAQ',
