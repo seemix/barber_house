@@ -1,4 +1,4 @@
-import { Barbers, Contacts, Faq, Footer, Offers, Services } from '../index.js';
+import { About, Contacts, Faq, Footer, Offers, Services } from '../index.js';
 
 const ModalProvider = ({ showModal }) => {
     return (
@@ -6,7 +6,7 @@ const ModalProvider = ({ showModal }) => {
             {!showModal && <>
                 <Services/>
                 <Contacts/>
-                <Barbers/>
+                <About/>
                 <Offers/>
                 <Faq/>
                 <Footer/>

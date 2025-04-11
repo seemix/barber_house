@@ -9,7 +9,7 @@ export const contactAnimation = {
         opacity: 1,
         y: 0,
         filter: 'blur(0)',
-        transition: { delay: custom * .25, duration: .3, ease: 'easeInOut' }
+        transition: { delay: custom * .25, duration: .35, ease: 'easeInOut' }
     })
 };
 
@@ -21,6 +21,6 @@ export const mapAnimation = {
     visible: custom => ({
         opacity: 1,
         x: 0,
-        transition: { delay: custom * .2, duration: .3, ease: 'easeInOut' }
+        transition: { delay: custom * .2, duration: .4, ease: 'easeInOut' }
     })
 }

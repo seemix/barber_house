@@ -3,9 +3,9 @@ import { motion } from 'framer-motion';
 
 import { barberCardAnimation, barberPictureAnimation } from './animations.js';
 import { SectionCaption } from '../index.js';
-import css from './Barbers.module.css';
+import css from './About.module.css';
 
-const Barbers = () => {
+const About = () => {
     const { t } = useTranslation();
     return (
         <section id={'about us'}>
@@ -16,7 +16,6 @@ const Barbers = () => {
                         whileInView={'visible'}
                         viewport={{ once: true }}
                         variants={barberCardAnimation}
-
             >
                 <div className={'card ' + css.about_card}>
                     <motion.div className={css.about_text}
@@ -43,4 +42,4 @@ const Barbers = () => {
     );
 };
 
-export default Barbers;
+export default About;

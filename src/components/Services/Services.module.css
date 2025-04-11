@@ -29,6 +29,14 @@
     font-weight: 600;
     color: var(--main);
 }
-.discounts {
-    /*margin-top: 25px;*/
+.highlight {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 2em;
+}
+.highlight li {
+    list-style: none;
 }
