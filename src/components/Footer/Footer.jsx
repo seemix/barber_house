@@ -32,7 +32,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className={css.under_footer}>Copyright © Barbers House 2024</div>
+            <div className={css.under_footer}>Copyright © Barbers House 2025</div>
         </footer>
     );
 };

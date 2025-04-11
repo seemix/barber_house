@@ -1,9 +1,7 @@
 .footer_wrapper {
     width: 100%;
-    /*background-color: var(--main_dark);*/
     background-color: rgb(232, 220, 196);
-    border-top: 2px solid var(--main_dark);
-    /*border-bottom: 80px solid var(--main_dark);*/
+    border-top: 1px solid var(--main_dark);
     color: var(--white);
     display: flex;
     justify-content: center;
