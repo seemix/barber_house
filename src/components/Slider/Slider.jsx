@@ -8,18 +8,19 @@ import 'swiper/css/navigation';
 
 import sl2 from './2.webp';
 import sl3 from './3.webp';
-import sl4 from './4.webp';
+//import sl4 from './4.webp';
 import sl5 from './5.webp';
 import sl6 from './6.webp';
 import sl7 from './7.webp';
 import sl8 from './8.webp';
+import sl9 from './9.webp';
 
 import { BookingButton } from '../index.js';
 import { buttonAnimation, headerAnimation } from './animations.js';
 import css from './Slider.module.css';
 
 const Slider = ({ showModal }) => {
-    const slides = [sl2, sl8, sl3, sl5, sl6, sl7, sl4];
+    const slides = [sl2, sl8, sl3, sl5, sl6, sl7, sl9];
     const { t } = useTranslation();
     return (
         <div className={css.slider} id={'top'}>
@@ -84,16 +85,6 @@ const Slider = ({ showModal }) => {
                     </SwiperSlide>)
                 }
             </Swiper>
-            <div className={css.welcome_wrapper}>
-                <motion.h1
-                    key={showModal}
-                    custom={1}
-                    initial={'hidden'}
-                    animate={'visible'}
-                    variants={headerAnimation}
-                >{t('welcome')}
-                </motion.h1>
-            </div>
             <div className={css.button_wrapper}>
                 <motion.div
                     key={showModal}
@@ -103,6 +94,16 @@ const Slider = ({ showModal }) => {
                     variants={buttonAnimation}>
                     <BookingButton/>
                 </motion.div>
+            </div>
+            <div className={css.welcome_wrapper}>
+                <motion.h1
+                    key={showModal}
+                    custom={1}
+                    initial={'hidden'}
+                    animate={'visible'}
+                    variants={headerAnimation}
+                >{t('welcome')}
+                </motion.h1>
             </div>
         </div>
     );

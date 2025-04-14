@@ -16,7 +16,7 @@ const PriceGenerator = ({ data }) => {
                         <div>{item.time} min.</div>
                         <div/>
                         <div className={css.price}>
-                            <h4>{item.price} {assets.currency}</h4>
+                            <h4>{item.price} {item.price && assets.currency}</h4>
                         </div>
                     </div>
                 </div>)

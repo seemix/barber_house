@@ -9,7 +9,7 @@ export const block1 = [
         id: 1,
         name: 'Hair wash',
         time: 5,
-        price: 20
+        // price: 20
     },
 ];
 
