@@ -1,7 +1,22 @@
+.faq_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.faq_content {
+    display: flex;
+    flex-direction: column;
+}
 
 div.c {
     position: relative;
-    /*margin: 2em;*/
+}
+
+.c h3 {
+    font-size: 1.2em;
+    line-height: 1.2em;
+    text-align: left;
 }
 
 input {
@@ -35,19 +50,20 @@ div.p {
     transition: max-height 0.5s;
     background-color: white;
     border-radius: 6px;
+    /*padding: 10px;*/
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 div.p p {
-    padding: 1em;
+    padding: 0 1em;
 }
 
-input:checked ~ h3 label::before {
-    border-left: 10px solid transparent;
-    border-top: 10px solid var(--main);
-    margin-top: 12px;
-    margin-right: 10px;
-}
+/*input:checked ~ h3 label::before {*/
+/*    border-left: 10px solid transparent;*/
+/*    border-top: 10px solid var(--main);*/
+/*    margin-top: 12px;*/
+/*    margin-right: 10px;*/
+/*}*/
 
 input:checked ~ h3 ~ div.p {
     max-height: 100px;
