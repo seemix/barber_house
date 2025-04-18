@@ -8,7 +8,7 @@ const Faq = () => {
     const questions = Array.from({ length: 12 }, (_, i) => i + 1);
     return (
         <section id={'faq'}>
-            <SectionCaption caption={'FAQ'}/>
+            <SectionCaption caption={t('faq')}/>
             <div className={css.faq_wrapper}>
                 <div className={css.faq_content}>
                     {questions.map((item) => (<div className={css.c} key={item}>

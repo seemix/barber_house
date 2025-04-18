@@ -18,23 +18,22 @@ const Services = () => {
         <section id={'services'}>
             <SectionCaption caption={'Services'}/>
             <motion.div className={css.highlight}
-            initial={'hidden'}
+                        initial={'hidden'}
                         whileInView={'visible'}
                         viewport={{ once: true }}
                         variants={highLightAnimation}
                         custom={3}
 
             >
-                <big>Tailored Haircuts. Guaranteed Confidence</big>
+                <big>{t('siHeader')}</big>
                 <ul>
-                    <li>✔ 30,000+ haircuts of experience</li>
-                    <li>✔ 5-star rated on Google</li>
-                    <li>✔ Satisfaction guaranteed — love your cut or it’s free</li>
-                    <li>✔ MobilePay accepted for fast, easy payment</li>
+                    <li>✔ {t('si1')}</li>
+                    <li>✔ {t('si2')}</li>
+                    <li>✔ {t('si3')}</li>
+                    <li>✔ {t('si4')}</li>
                 </ul>
             </motion.div>
             <div className={'content_wrapper'}>
-
                 <motion.div className={'card ' + css.service_card}
                             custom={2}
                             initial={'hidden'}
@@ -75,7 +74,6 @@ const Services = () => {
                         <p><IoIosCheckmarkCircleOutline size={'1.2em'}/> {t('every1')}</p>
                         <p><IoIosCheckmarkCircleOutline size={'1.2em'}/> {t('every2')}</p>
                         <p><IoIosCheckmarkCircleOutline size={'1.2em'}/> Here you can pay with MobilePay</p>
-
                     </div>
                 </motion.div>
             </div>
