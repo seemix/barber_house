@@ -40,7 +40,8 @@
         flex-direction: column-reverse;
     }
     .about_image {
-        border-radius: 0;
+        border-top-left-radius: 6px;
+        border-bottom-right-radius: 0;
         width: 100%;
     }
 }
