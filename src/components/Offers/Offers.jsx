@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 
 import { BookingButton, SectionCaption } from '../index.js';
-import { offerPictureAnimation, offerTextAnimation } from './animations.js';
+import { offerImageAnimation, offerTextAnimation } from './animations.js';
 import css from './Offers.module.css';
 
 const Offers = () => {
@@ -18,7 +18,7 @@ const Offers = () => {
                                 initial={'hidden'}
                                 whileInView={'visible'}
                                 viewport={{ once: true }}
-                                variants={offerPictureAnimation}/>
+                                variants={offerImageAnimation}/>
                     <motion.div className={css.offer}
                                 custom={3}
                                 initial={'hidden'}
@@ -35,6 +35,7 @@ const Offers = () => {
                                 <p><i>{t('of3')}</i></p>
                                 <BookingButton/>
                             </div>
+                            {/*<Loader/>*/}
                         </div>
                     </motion.div>
                 </div>

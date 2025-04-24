@@ -23,7 +23,8 @@ const Footer = () => {
                         <p>
                             Istedgade 28, 8700 Horsens
                         </p>
-                        <MdOutlinePhoneAndroid size={'1.1em'}/> +(45) 52 64 42 96
+                        <MdOutlinePhoneAndroid size={'1.1em'}/>
+                        <a href="tel:+4552644296">+(45) 52 64 42 96</a>
                     </div>
                     <div>
                         <h4>{t('Work hours')}</h4>

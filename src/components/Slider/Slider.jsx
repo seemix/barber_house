@@ -1,94 +1,54 @@
 import { useTranslation } from 'react-i18next';
+import { useQuery } from '@apollo/client';
 import { motion } from 'framer-motion';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-import sl2 from './2.webp';
-import sl3 from './3.webp';
-import sl5 from './5.webp';
-import sl6 from './6.webp';
-import sl7 from './7.webp';
-import sl8 from './8.webp';
-import sl9 from './9.webp';
-import sl10 from './10.webp';
-
 import { BookingButton } from '../index.js';
 import { buttonAnimation, headerAnimation } from './animations.js';
+import { swiperSettings } from './swiperSettings.js';
+import { ALL_SLIDES, slideMapper } from './query.js';
 import css from './Slider.module.css';
 
-const Slider = ({ showModal }) => {
-    const slides = [sl2, sl8, sl3, sl5, sl6, sl7, sl10, sl9];
+const Slider = () => {
+    const { data, loading, error } = useQuery(ALL_SLIDES);
+    let slides;
+    if (data) slides = slideMapper(data);
+    {
+        loading && <h2>loading...</h2>
+    }
+    {
+        error && <h1>error</h1>
+    }
+    // const slides = [sl2, sl8, sl3, sl5, sl6, sl7, sl10, sl9];
     const { t } = useTranslation();
     return (
         <div className={css.slider} id={'top'}>
             <Swiper
                 style={{ zIndex: 0 }}
-                autoplay={{
-                    delay: 6500,
-                    disableOnInteraction: false,
-                }}
-                effect={'fade'}
-                fadeEffect={{
-                    crossFade: true,
-                }}
-                pagination={{
-                    clickable: true,
-                }}
-                autoHeight={true}
-                slidesPerView={1}
-                spaceBetween={10}
-                breakpoints={{
-                    '@0.00': {
-                        slidesPerView: 1,
-                        spaceBetween: 0,
-                    },
-                    '@0.50': {
-                        slidesPerView: 1,
-                        spaceBetween: 0,
-                    },
-                    '@0.60': {
-                        slidesPerView: 1,
-                        spaceBetween: 0,
-                    },
-                    '@0.75': {
-                        slidesPerView: 2,
-                        spaceBetween: 0,
-                    },
-                    '@1.00': {
-                        slidesPerView: 2,
-                        spaceBetween: 0,
-                    },
-                    '@1.25': {
-                        slidesPerView: 3,
-                        spaceBetween: 0,
-                    },
-                    '@1.50': {
-                        slidesPerView: 3,
-                        spaceBetween: 0,
-                    },
-                    '@1.80': {
-                        slidesPerView: 3,
-                        spaceBetween: 0
-                    }
-
-                }}
-                loop={true}
-                modules={[Pagination, Navigation, Autoplay]}
+                {...swiperSettings}
             >
-                {
+                {slides &&
                     slides.map((slide, index) => <SwiperSlide key={index}>
-                        <div className={css.slider_image} style={{ backgroundImage: `url(${slide})` }}></div>
-                        <div className={css.slider_overlay}></div>
+                        <div className={css.slider_image} style={{ backgroundImage: `url(${slide})` }}/>
+                        <div className={css.slider_overlay}/>
                     </SwiperSlide>)
                 }
             </Swiper>
             <div className={css.button_wrapper}>
+                <motion.h1
+                    // key={showModal}
+                    custom={1.5}
+                    initial={'hidden'}
+                    animate={'visible'}
+                    variants={headerAnimation}
+                >{t('welcome')}
+                </motion.h1>
                 <motion.div
-                    key={showModal}
-                    custom={2}
+                    // key={showModal}
+                    custom={2.5}
                     initial={'hidden'}
                     animate={'visible'}
                     variants={buttonAnimation}>
@@ -96,14 +56,7 @@ const Slider = ({ showModal }) => {
                 </motion.div>
             </div>
             <div className={css.welcome_wrapper}>
-                <motion.h1
-                    key={showModal}
-                    custom={1}
-                    initial={'hidden'}
-                    animate={'visible'}
-                    variants={headerAnimation}
-                >{t('welcome')}
-                </motion.h1>
+
             </div>
         </div>
     );

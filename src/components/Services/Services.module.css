@@ -29,6 +29,7 @@
     font-weight: 600;
     color: var(--main);
 }
+
 .highlight {
     width: 100%;
     display: flex;

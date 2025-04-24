@@ -9,7 +9,7 @@ export const offerTextAnimation = {
         transition: { delay: custom * .25, duration: .25, ease: 'easeInOut' }
     })
 }
-export const offerPictureAnimation = {
+export const offerImageAnimation = {
     hidden: {
         opacity: 0,
         filter: 'blur(20px)',

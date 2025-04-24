@@ -6,7 +6,7 @@ export const cardAnimation = {
     visible: custom => ({
         opacity: 1,
         y: 0,
-        transition: { delay: custom * 0.2, duration: 0.3, ease: 'easeInOut' }
+        transition: { delay: custom * .25, duration: .35, ease: 'easeInOut' }
     })
 };
 
@@ -20,6 +20,6 @@ export const highLightAnimation = {
         opacity: 1,
         x: 0,
         filter: 'blur(0)',
-        transition: { delay: custom * 0.25, duration: 0.5, ease: 'easeInOut' }
+        transition: { delay: custom * .25, duration: .5, ease: 'easeInOut' }
     })
 }

@@ -30,7 +30,7 @@ const Contacts = () => {
                         </div>
                         <div>
                             <h4><MdOutlinePhoneAndroid/> {t('Phone')}</h4>
-                            <p>+(45) 52 64 42 96</p>
+                            <p><a href="tel:+4552644296">+(45) 52 64 42 96</a></p>
                         </div>
                         <div>
                             <h4><FaInstagram/> Instagram</h4>
