@@ -22,6 +22,7 @@ const Offers = () => {
                 <div className={`card ${css.offers_card}`}>
                     {!loading && <motion.div
                         className={css.offer_image}
+                        style={{backgroundImage: `url(${offers[0].image})`}}
                         custom={2}
                         initial="hidden"
                         whileInView="visible"

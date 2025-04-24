@@ -12,7 +12,7 @@
 .offer_image {
     aspect-ratio: 489 / 551;
     min-width: 320px;
-    background-image: url("./offer1.webp");
+    /*background-image: url("./offer1.webp");*/
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

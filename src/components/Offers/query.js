@@ -12,13 +12,18 @@ export const OFFERS = (language = 'EN') => {
                     id
                     title
                     content
+                    featuredImage {
+                        node {
+                            mediaItemUrl
+                        }
+                    }
                 }
             }
         }`
 }
 
 export const offersMapper = (data) => {
-    return data.posts.nodes.map(({id, title, content}) => {
-        return {id, title, content};
+    return data.posts.nodes.map(({id, title, content, featuredImage}) => {
+        return {id, title, content, image: featuredImage.node.mediaItemUrl};
     })
 };
