@@ -36,7 +36,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 3em;
+    gap: 2.5em;
 }
 .slider h1 {
     color: whitesmoke;
@@ -50,6 +50,6 @@
     }
 
     .button_wrapper {
-        bottom: 0;
+        bottom: -5%;
     }
 }
