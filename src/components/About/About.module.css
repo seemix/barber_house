@@ -19,7 +19,7 @@
 
 .about_image {
     aspect-ratio: 587 / 662;
-    min-width: 380px;
+    min-width: 320px;
     width: 420px;
     background-image: url("./barber1.webp");
     background-position: center;
