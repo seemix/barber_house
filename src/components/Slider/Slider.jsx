@@ -1,5 +1,5 @@
-import { useTranslation } from 'react-i18next';
 import { useQuery } from '@apollo/client';
+import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -13,16 +13,9 @@ import { ALL_SLIDES, slideMapper } from './query.js';
 import css from './Slider.module.css';
 
 const Slider = () => {
-    const { data, loading, error } = useQuery(ALL_SLIDES);
+    const { data } = useQuery(ALL_SLIDES);
     let slides;
     if (data) slides = slideMapper(data);
-    {
-        loading && <h2>loading...</h2>
-    }
-    {
-        error && <h1>error</h1>
-    }
-    // const slides = [sl2, sl8, sl3, sl5, sl6, sl7, sl10, sl9];
     const { t } = useTranslation();
     return (
         <div className={css.slider} id={'top'}>
@@ -39,7 +32,6 @@ const Slider = () => {
             </Swiper>
             <div className={css.button_wrapper}>
                 <motion.h1
-                    // key={showModal}
                     custom={1.5}
                     initial={'hidden'}
                     animate={'visible'}
@@ -47,16 +39,12 @@ const Slider = () => {
                 >{t('welcome')}
                 </motion.h1>
                 <motion.div
-                    // key={showModal}
                     custom={2.5}
                     initial={'hidden'}
                     animate={'visible'}
                     variants={buttonAnimation}>
                     <BookingButton/>
                 </motion.div>
-            </div>
-            <div className={css.welcome_wrapper}>
-
             </div>
         </div>
     );
