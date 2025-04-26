@@ -1,0 +1,46 @@
+.offer_container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.vertical {
+    grid-template-columns: 1fr;
+}
+
+.offer_image {
+    width: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+}
+
+.offer {
+    padding: 1.2em;
+    height: 100%;
+}
+
+.offer p {
+    font-size: 1.05em;
+}
+
+.center {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+@media (max-width: 700px) {
+    .offer_image {
+        border-radius: 6px 6px 0 0;
+        aspect-ratio: 2 / 1.3;
+        width: 100%;
+    }
+
+    .offer {
+        padding: 15px;
+    }
+}

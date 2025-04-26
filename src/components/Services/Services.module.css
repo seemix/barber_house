@@ -1,5 +1,5 @@
 .service_card {
-    max-width: 320px;
+    /*max-width: 320px;*/
     width: 320px;
     padding: 20px;
 }
@@ -40,4 +40,10 @@
 }
 .highlight li {
     list-style: none;
+}
+
+@media (max-width: 700px) {
+    .service_card {
+        width: 90%;
+    }
 }

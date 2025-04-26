@@ -9,7 +9,7 @@
     gap: 15px;
     color: var(--white);
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     transition: all 0.4s ease-in-out;
 }
 
