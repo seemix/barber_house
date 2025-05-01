@@ -1,9 +1,9 @@
 import { MdOutlinePhoneAndroid } from 'react-icons/md';
 import { useTranslation } from 'react-i18next';
 
+import { BookingButton } from '../index.js';
 import logo from './bottom_logo1.webp';
 import css from './Footer.module.css';
-import { BookingButton } from '../index.js';
 
 const Footer = () => {
     const { t } = useTranslation();

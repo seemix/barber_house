@@ -39,7 +39,6 @@ const ArrowUp = () => {
                     <FaArrowUp/>
                 </motion.button>
             }
-
         </>
     );
 };
