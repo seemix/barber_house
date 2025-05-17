@@ -30,7 +30,7 @@
     background-color: rgb(232, 220, 196);
 }
 .logo img {
-    width: 200px;
+    /*width: 200px;*/
 }
 .under_footer {
     background-color: var(--main_dark);

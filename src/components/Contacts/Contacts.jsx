@@ -58,6 +58,7 @@ const Contacts = () => {
                             variants={mapAnimation}
                 >
                     <iframe
+                        title={'barbershop map'}
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1119.235268577447!2d9.837897137360839!3d55.871852082814904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c6313df98d777%3A0xe5656fd7b108cffd!2sIstedgade%2028%2C%208700%20Horsens%2C%20Denmark!5e0!3m2!1sen!2sua!4v1705695275012!5m2!1sen!2sua"
                         width="500px" height="550" style={{ border: 0, borderRadius: '6px' }} loading="lazy">
                     </iframe>

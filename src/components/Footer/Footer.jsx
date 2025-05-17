@@ -2,7 +2,7 @@ import { MdOutlinePhoneAndroid } from 'react-icons/md';
 import { useTranslation } from 'react-i18next';
 
 import { BookingButton } from '../index.js';
-import logo from './bottom_logo1.webp';
+import logo from './bottom_logo.webp';
 import css from './Footer.module.css';
 
 const Footer = () => {
@@ -12,7 +12,7 @@ const Footer = () => {
             <div className={css.footer_wrapper}>
                 <div className={css.footer_content}>
                     <div className={css.logo}>
-                        <img src={logo} alt={'footer_logo'}/>
+                        <img src={logo} alt={'footer_logo'} width={200} height={200}/>
                     </div>
                     <div>
                         <h4>Booking</h4>

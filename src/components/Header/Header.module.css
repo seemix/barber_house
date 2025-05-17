@@ -17,10 +17,10 @@
     background-color: var(--main_dark);
 }
 
-.logo img {
-    width: 140px;
-    margin-left: 20px;
-}
+/*.logo img {*/
+/*    width: 140px;*/
+/*    margin-left: 20px;*/
+/*}*/
 
 .lang_switcher_wrapper {
     display: flex;

@@ -5,4 +5,5 @@
     right: 20px;
     padding:  15px;
     z-index: 2;
+    color: var(--main_dark);
 }
