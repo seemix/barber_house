@@ -11,7 +11,7 @@ const Menu = ({ openMenu }) => {
         <nav>
             <ul className={openMenu ? css.navigation + ' ' + css.open : css.navigation}>
                 {
-                    menuItems.map(item => <li key={item.id}>
+                    menuItems.map(item => <li key={item.id} className={css.nav_link}>
                         <Link to={item.to}
                               className={css.nav_link}
                               smooth={true}

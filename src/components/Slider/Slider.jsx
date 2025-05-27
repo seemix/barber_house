@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { useQuery } from '@apollo/client';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
@@ -16,6 +17,20 @@ const Slider = () => {
     const { data } = useQuery(ALL_SLIDES);
     let slides;
     if (data) slides = slideMapper(data);
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+    useEffect(() => {
+        const handleResize = () => setWindowWidth(window.innerWidth);
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+    const getImageForWidth = (slide, sizeSuffix = '-607x1024') => {
+        if (windowWidth <= 600) {
+            return slide.replace(/(\.[a-z]+)$/i, `${sizeSuffix}$1`);
+        }
+        return slide;
+    };
+
     const { t } = useTranslation();
     return (
         <div className={css.slider} id={'top'}>
@@ -24,10 +39,15 @@ const Slider = () => {
                 {...swiperSettings}
             >
                 {slides &&
-                    slides.map((slide, index) => <SwiperSlide key={index}>
-                        <div className={css.slider_image} style={{ backgroundImage: `url(${slide})` }}/>
-                        <div className={css.slider_overlay}/>
-                    </SwiperSlide>)
+                    slides.map((slide, index) => {
+                        const image = getImageForWidth(slide);
+                        return (
+                            <SwiperSlide key={index}>
+                                <div className={css.slider_image} style={{ backgroundImage: `url(${image})` }}/>
+                                {/*<img src={slide} alt={slide} className={css.slider_image}/>*/}
+                                <div className={css.slider_overlay}/>
+                            </SwiperSlide>)
+                    })
                 }
             </Swiper>
             <div className={css.button_wrapper}>

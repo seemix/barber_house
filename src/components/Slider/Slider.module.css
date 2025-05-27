@@ -15,6 +15,7 @@
     background-size: cover;
     min-width: calc(100vw / 3);
     height: 100dvh;
+    aspect-ratio: 96 / 162;
 }
 
 .slider_overlay {
