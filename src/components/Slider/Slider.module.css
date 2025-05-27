@@ -12,10 +12,12 @@
 
 .slider_image {
     background-position: center;
-    background-size: cover;
+    /*background-size: cover;*/
     min-width: calc(100vw / 3);
     height: 100dvh;
-    aspect-ratio: 96 / 162;
+    object-fit: cover;
+    object-position: center;
+    /*aspect-ratio: 96 / 162;*/
 }
 
 .slider_overlay {

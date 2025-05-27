@@ -43,8 +43,11 @@ const Slider = () => {
                         const image = getImageForWidth(slide);
                         return (
                             <SwiperSlide key={index}>
-                                <div className={css.slider_image} style={{ backgroundImage: `url(${image})` }}/>
-                                {/*<img src={slide} alt={slide} className={css.slider_image}/>*/}
+                                {/*<div className={css.slider_image} style={{ backgroundImage: `url(${image})` }}/>*/}
+                                <img src={image} alt={slide} className={css.slider_image}
+                                     loading={'eager'}
+                                     width={'100%'}
+                                     height={'100%'}/>
                                 <div className={css.slider_overlay}/>
                             </SwiperSlide>)
                     })
