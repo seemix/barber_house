@@ -15,9 +15,10 @@ import css from './Slider.module.css';
 
 const Slider = () => {
     const { data } = useQuery(ALL_SLIDES);
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
     let slides;
     if (data) slides = slideMapper(data);
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
     useEffect(() => {
         const handleResize = () => setWindowWidth(window.innerWidth);
@@ -35,6 +36,9 @@ const Slider = () => {
     return (
         <div className={css.slider} id={'top'}>
             <Swiper
+                preloadImages={false}
+                lazy={true}
+                initialSlide={0}
                 style={{ zIndex: 0 }}
                 {...swiperSettings}
             >
@@ -43,11 +47,7 @@ const Slider = () => {
                         const image = getImageForWidth(slide);
                         return (
                             <SwiperSlide key={index}>
-                                {/*<div className={css.slider_image} style={{ backgroundImage: `url(${image})` }}/>*/}
-                                <img src={image} alt={slide} className={css.slider_image}
-                                     loading={'eager'}
-                                     width={'100%'}
-                                     height={'100%'}/>
+                                <div className={css.slider_image} style={{ backgroundImage: `url(${image})` }}/>
                                 <div className={css.slider_overlay}/>
                             </SwiperSlide>)
                     })

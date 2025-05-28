@@ -15,40 +15,20 @@ export const swiperSettings = {
     autoHeight: true,
     slidesPerView: 1,
     spaceBetween: 10,
+    lazy: {
+        loadPrevNext: true,
+        loadOnTransitionStart: true,
+    },
     breakpoints: {
-        '@0.00': {
-            slidesPerView: 1,
-            spaceBetween: 0,
-        },
-        '@0.50': {
-            slidesPerView: 1,
-            spaceBetween: 0,
-        },
-        '@0.60': {
-            slidesPerView: 1,
-            spaceBetween: 0,
-        },
-        '@0.75': {
+        768: {
             slidesPerView: 2,
-            spaceBetween: 0,
         },
-        '@1.00': {
-            slidesPerView: 2,
-            spaceBetween: 0,
-        },
-        '@1.25': {
+        1024: {
             slidesPerView: 3,
-            spaceBetween: 0,
-        },
-        '@1.50': {
-            slidesPerView: 3,
-            spaceBetween: 0,
-        },
-        '@1.80': {
-            slidesPerView: 3,
-            spaceBetween: 0,
         },
     },
+
     loop: true,
+    preloadImages: false,
     modules: [Pagination, Navigation, Autoplay],
 };
